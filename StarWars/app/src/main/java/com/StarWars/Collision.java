@@ -97,7 +97,7 @@ public class Collision {
 				MyGameView.mExp.add(new Explosion(x1, y1, Explosion.SMALL));	// 작은 불꽃
 			} else {											// 보호막 없으면
 				MyGameView.mShip.isDead = true;					// 아군기를 잃음
-				MyGameView.shipCnt--;							// 아군기를 잃음
+				MyGameView.shipCnt--;                           // 아군기를 잃음
 				MyGameView.mExp.add(new Explosion(x, y, Explosion.MYSHIP));	// 큰 불꽃
 			} // if
 			break;
